@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 124 92" width="480" height="356">
+<g fill="none" stroke-width="10" stroke-linecap="butt" stroke-linejoin="miter">
+<line x1="5" y1="50" x2="5" y2="72" stroke="#ffffff" opacity="0.45"></line>
+<line x1="22" y1="34" x2="22" y2="72" stroke="#ffffff" opacity="0.65"></line>
+<line x1="39" y1="18" x2="39" y2="72" stroke="#ffffff" opacity="0.85"></line>
+<line x1="58" y1="0" x2="58" y2="72" stroke="#8b45ff"></line>
+<line x1="58" y1="5" x2="102" y2="72" stroke="#ffffff"></line>
+</g>
+</svg>
