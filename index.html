@@ -8,11 +8,16 @@
 <meta name="theme-color" content="#F7F6F4">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20128%20128%22%3E%3Crect%20width=%22128%22%20height=%22128%22%20rx=%2226%22%20fill=%22%230D0D11%22/%3E%3Cg%20transform=%22translate%2820,34.4%29%20scale%280.822%29%22%20fill=%22none%22%20stroke-width=%2210%22%3E%3Cline%20x1=%225%22%20y1=%2250%22%20x2=%225%22%20y2=%2272%22%20stroke=%22%23F7F6F4%22%20opacity=%22.45%22/%3E%3Cline%20x1=%2222%22%20y1=%2234%22%20x2=%2222%22%20y2=%2272%22%20stroke=%22%23F7F6F4%22%20opacity=%22.65%22/%3E%3Cline%20x1=%2239%22%20y1=%2218%22%20x2=%2239%22%20y2=%2272%22%20stroke=%22%23F7F6F4%22%20opacity=%22.85%22/%3E%3Cline%20x1=%2258%22%20y1=%220%22%20x2=%2258%22%20y2=%2272%22%20stroke=%22%238B45FF%22/%3E%3Cline%20x1=%2258%22%20y1=%225%22%20x2=%22102%22%20y2=%2272%22%20stroke=%22%23F7F6F4%22/%3E%3C/g%3E%3C/svg%3E">
 <link rel="canonical" href="https://oneaimagency.com/">
+<link rel="alternate" hreflang="en" href="https://oneaimagency.com/">
+<link rel="alternate" hreflang="es" href="https://oneaimagency.com/es/">
+<link rel="alternate" hreflang="x-default" href="https://oneaimagency.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="One Aim Agency">
 <meta property="og:title" content="Every business has one aim. We build what gets you there.">
 <meta property="og:description" content="Websites, online stores, booking, CRM and AI tools for small businesses. Based in Miami, working with businesses across the U.S.">
 <meta property="og:url" content="https://oneaimagency.com/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_US">
 <meta property="og:image" content="https://oneaimagency.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -105,6 +110,8 @@ main{overflow-x:clip}
 .links a:not(.talk):hover{color:var(--ink)}
 .talk{display:inline-flex;align-items:center;height:44px;padding:0 22px;border:1px solid var(--ink);border-radius:999px;color:var(--ink);font-weight:500;transition:background .2s,color .2s}
 .talk:hover{background:var(--ink);color:var(--paper)}
+.lang{display:inline-flex;align-items:center;min-height:44px;padding-left:clamp(16px,1.8vw,26px);border-left:1px solid var(--rule);color:var(--ink-2);text-decoration:none}
+.links .lang:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
 .menu-btn{display:none;height:44px;padding:0 4px;background:none;border:0;font:500 15px "Instrument Sans",sans-serif;color:var(--ink);cursor:pointer}
 .menu{display:none}
 
@@ -264,7 +271,8 @@ footer{padding:56px 0 calc(40px + env(safe-area-inset-bottom));border-top:1px so
 @media (max-width:760px){
   html{scroll-padding-top:72px}
   .nav{height:68px}
-  .links a:not(.talk){display:none}
+  .links a:not(.talk):not(.lang){display:none}
+  .lang{padding-left:16px}
   .links{gap:16px}
   .menu-btn{display:inline-flex;align-items:center}
   .talk{display:none!important}
@@ -331,6 +339,7 @@ footer{padding:56px 0 calc(40px + env(safe-area-inset-bottom));border-top:1px so
 
 /* ===== v3: color, depth and motion ===== */
 :root{--ember:#FF6B3D;--ember-soft:#FFE6DC;--violet-l:#A876FF;--grad:linear-gradient(90deg,#6C22E0 0%,#A876FF 55%,#FF6B3D 100%)}
+html[lang=es] h1{font-size:clamp(40px,4.6vw,74px)}
 h1 em,.h2 em{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .how .h2 em{color:transparent}
 
@@ -600,7 +609,8 @@ h1 em,.h2 em{background:var(--grad);-webkit-background-clip:text;background-clip
       <span>ONE AIM</span>
     </a>
     <nav class="links" aria-label="Main">
-      <a href="#services">Services</a><a href="#why">Why One Aim</a><a href="#how">How it works</a><a href="#faq">FAQ</a>
+      <a href="#services">Services</a><a href="#why">Why One Aim</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+      <a class="lang" href="es/" hreflang="es" lang="es">Español</a>
       <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
       <a class="talk" href="https://cal.com/oneaimagency/30min" target="_blank" rel="noopener">Book a consultation</a>
     </nav>
