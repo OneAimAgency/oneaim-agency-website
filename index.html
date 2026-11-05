@@ -26,31 +26,7 @@
 <meta name="twitter:title" content="Every business has one aim. We build what gets you there.">
 <meta name="twitter:description" content="Websites, online stores, booking, CRM and AI tools for small businesses. Based in Miami, working with businesses across the U.S.">
 <meta name="twitter:image" content="https://oneaimagency.com/og-image.png">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "One Aim Agency",
-  "url": "https://oneaimagency.com/",
-  "slogan": "Our Aim Is Your Success",
-  "description": "Miami-based agency building websites, online stores, booking systems, CRM, AI tools, lead generation and branding for small businesses across the U.S.",
-  "areaServed": { "@type": "Country", "name": "United States" },
-  "knowsAbout": ["Web design", "E-commerce", "CRM", "Online booking", "Business automation", "AI assistants", "Lead generation", "Branding"],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Services",
-    "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website design and development" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-commerce websites" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CRM and customer management" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Booking systems and business automations" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI integrations and automation" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lead generation and digital marketing" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Branding" } }
-    ]
-  }
-}
-</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"One Aim Agency","url":"https://oneaimagency.com/","slogan":"Our Aim Is Your Success","description":"Miami-based agency building websites, online stores, booking systems, CRM, AI tools, lead generation and branding for small businesses across the U.S.","areaServed":{"@type":"Country","name":"United States"},"knowsAbout":["Web design","E-commerce","CRM","Online booking","Business automation","AI assistants","Lead generation","Branding"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Website design and development"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"E-commerce websites"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"CRM and customer management"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Booking systems and business automations"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI integrations and automation"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Lead generation and digital marketing"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Branding"}}]},"telephone":"+1-786-307-6485","email":"oneaimagency@gmail.com","image":"https://oneaimagency.com/og-image.png","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"sameAs":["https://www.instagram.com/oneaimagency/","https://www.tiktok.com/@oneaimagency_"],"inLanguage":"en"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -228,7 +204,7 @@ section{padding:clamp(80px,11vw,160px) 0}
 .qa p{color:var(--ink-2);padding:0 48px 26px 0;max-width:62ch}
 
 /* contact */
-.contact{border-top:1px solid var(--rule)}
+#faq{border-top:1px solid var(--rule)}
 .contact-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(40px,6vw,120px);align-items:start}
 .direct{display:grid;gap:12px;margin-top:36px;max-width:420px}
 .direct .btn{width:100%}
@@ -596,6 +572,122 @@ h1 em,.h2 em{background:var(--grad);-webkit-background-clip:text;background-clip
   .foot-top{grid-template-columns:1fr}
   .wa-float{width:54px;height:54px;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px))}
 }
+
+/* ===== v4: depth and motion ===== */
+.stage{position:relative}
+.stage canvas.gl{position:absolute;left:-5%;top:-8%;width:110%;height:112%;display:block;touch-action:pan-y}
+.climb.gl .stage>svg{opacity:0}
+.toasts{position:absolute;inset:0;pointer-events:none;z-index:2}
+.toast{position:absolute;display:grid;grid-template-columns:auto 1fr;column-gap:11px;align-items:center;padding:10px 16px 10px 10px;border-radius:16px;background:rgba(255,255,255,.88);border:1px solid rgba(16,16,20,.07);box-shadow:0 22px 44px -22px rgba(52,16,110,.45),0 2px 6px rgba(16,16,20,.05);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);opacity:0;transform:translateY(12px) scale(.96);animation:toast 10.5s cubic-bezier(.2,.8,.2,1) infinite}
+.toast b{font-size:13.5px;font-weight:600;line-height:1.2}
+.toast span{grid-column:2;color:var(--ink-2);font-size:12.5px;line-height:1.3}
+.ti{grid-row:span 2;display:grid;place-items:center;width:34px;height:34px;border-radius:10px;color:#fff}
+.ti svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ti-v{background:linear-gradient(135deg,#6C22E0,#A876FF)}
+.ti-e{background:linear-gradient(135deg,#FF6B3D,#FF9A6E)}
+.ti-k{background:#101014}
+.t1{left:0;top:4%}
+.t2{right:-2%;top:30%;animation-delay:3.5s}
+.t3{left:10%;top:20%;animation-delay:7s}
+@keyframes toast{0%,3%{opacity:0;transform:translateY(12px) scale(.96)}8%,30%{opacity:1;transform:none}36%,100%{opacity:0;transform:translateY(-8px) scale(.98)}}
+
+/* headline sharpens in; the highlighted words shimmer slowly */
+h1 em,.h2 em,.foot-lede em{background-image:linear-gradient(90deg,#6C22E0,#A876FF,#FF6B3D,#A876FF,#6C22E0);background-size:200% 100%}
+@media (prefers-reduced-motion:no-preference){
+  .copy>h1{animation:sharpen 1.3s cubic-bezier(.2,.8,.2,1) .05s both}
+  h1 em,.h2 em,.foot-lede em{animation:shimmer 7s ease-in-out infinite alternate}
+}
+@keyframes sharpen{from{opacity:0;filter:blur(16px);transform:translateY(12px);letter-spacing:.02em}}
+@keyframes shimmer{to{background-position:100% 0}}
+
+/* services panel: a faint tech grid and a slow sweep of light */
+.svc-wrap .panel::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+  background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);background-size:56px 56px;
+  -webkit-mask:radial-gradient(75% 55% at 50% 0%,#000,transparent 80%);mask:radial-gradient(75% 55% at 50% 0%,#000,transparent 80%)}
+.svc-wrap .panel::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;background:linear-gradient(100deg,transparent 42%,rgba(168,118,255,.12) 50%,transparent 58%);background-size:260% 100%;animation:sweep 11s linear infinite}
+@keyframes sweep{from{background-position:130% 0}to{background-position:-130% 0}}
+.panel-in{position:relative;z-index:1}
+
+/* cards: a glow that follows the pointer, and a beam of light running around the Websites card */
+.card>*{position:relative;z-index:1}
+.card::after{content:"";position:absolute;inset:0;z-index:0;border-radius:inherit;pointer-events:none;background:radial-gradient(360px circle at var(--mx,50%) var(--my,-30%),rgba(168,118,255,.17),transparent 62%);opacity:0;transition:opacity .35s}
+.card:hover::after{opacity:1}
+@property --ang{syntax:"<angle>";initial-value:0deg;inherits:false}
+.card.beam::before{opacity:1;z-index:2;padding:2px;background:conic-gradient(from var(--ang),transparent 0deg,transparent 170deg,rgba(168,118,255,.35) 230deg,#A876FF 300deg,#FF6B3D 345deg,transparent 360deg);animation:beam 4.5s linear infinite}
+@keyframes beam{to{--ang:360deg}}
+
+/* the active how-it-works step pulses */
+.track li.on .node{animation:pulse 2.6s ease-out infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(108,34,224,.35)}70%,100%{box-shadow:0 0 0 14px rgba(108,34,224,0)}}
+.track li:last-child.on .node{animation-name:pulse2}
+@keyframes pulse2{0%{box-shadow:0 0 0 0 rgba(255,107,61,.4)}70%,100%{box-shadow:0 0 0 14px rgba(255,107,61,0)}}
+
+/* footer wordmark: a slow sweep of violet light */
+.wordmark{background:linear-gradient(90deg,rgba(247,246,244,.07) 30%,rgba(168,118,255,.45) 50%,rgba(247,246,244,.07) 70%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:wm 9s ease-in-out infinite}
+@keyframes wm{0%{background-position:100% 0}100%{background-position:0% 0}}
+
+@media (prefers-reduced-motion:reduce){
+  .toast{animation:none;opacity:1;transform:none}
+  .t3{display:none}
+  .svc-wrap .panel::after,.card.beam::before,.track li.on .node,.wordmark{animation:none!important}
+  .card.beam::before{opacity:0}
+}
+@media (max-width:760px){
+  .toast{padding:8px 12px 8px 8px;column-gap:9px;max-width:50%}
+  .toast b{font-size:12.5px}.toast span{font-size:11.5px}
+  .ti{width:30px;height:30px}.ti svg{width:17px;height:17px}
+  .t1{left:0;top:2%}.t2{left:0;right:auto;top:2%}.t3{display:none}
+  .stage canvas.gl{left:-4%;top:-6%;width:108%;height:110%}
+}
+
+
+
+/* social icons (Instagram, TikTok): icons only */
+.links a.nav-so{display:inline-grid;place-items:center;width:36px;height:44px;color:var(--ink-2);text-decoration:none}
+.links a.nav-so{margin-left:-10px}.links a.nav-so+a.nav-so{margin-left:calc(-1 * clamp(20px,2.6vw,40px) + 2px)}
+.links a.nav-so:hover{color:#6C22E0}
+.socials{display:flex;gap:10px;align-items:center}
+.socials a{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--rule);color:var(--ink);transition:border-color .25s,color .25s,background .25s}
+.socials a:hover{border-color:#6C22E0;color:#fff;background:#6C22E0}
+.contact .socials{margin-top:22px}
+.menu .socials{margin-top:14px;padding-bottom:4px}
+.menu .socials a{border-bottom:1px solid var(--rule)}
+.foot-cols div.socials{display:flex;gap:10px;margin-top:6px}
+.foot-dark .socials a{border-color:rgba(247,246,244,.18);color:rgba(247,246,244,.8)}
+.foot-dark .socials a:hover{border-color:#A876FF;background:#6C22E0;color:#fff}
+.nav-so svg,.socials svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7}
+.nav-so svg .fill,.socials svg .fill{fill:currentColor;stroke:none}
+
+/* brand colors on the social icons */
+svg.so-ig{stroke:var(--g)!important}
+svg.so-ig .dot{fill:var(--g);stroke:none}
+svg.so-tt path{stroke:none!important}
+svg.so-tt .c{fill:#25F4EE}svg.so-tt .r{fill:#FE2C55}svg.so-tt .k{fill:#101014}
+.foot-dark svg.so-tt .k{fill:#fff}
+.links a.nav-so{transition:transform .25s}
+.links a.nav-so:hover{transform:translateY(-2px)}
+.socials a{background:#fff}
+.socials a:hover{background:#fff;border-color:#6C22E0;transform:translateY(-2px)}
+.socials a{transition:border-color .25s,transform .25s}
+.foot-dark .socials a,.foot-dark .socials a:hover{background:rgba(255,255,255,.06)}
+
+/* QA fixes 2026-11-04 */
+.links a,.talk{white-space:nowrap}
+.h2{text-wrap:pretty}
+/* mid-size screens (tablets, small laptops): the top bar no longer squeezes */
+@media (min-width:761px) and (max-width:1340px){ .links a.nav-so{display:none} }
+@media (min-width:761px) and (max-width:1199px){
+  .links a:not(.talk):not(.lang){display:none}
+  .menu-btn{display:inline-flex;align-items:center}
+  .menu{display:block;position:fixed;inset:84px 0 auto 0;background:var(--paper);border-bottom:1px solid var(--rule);padding:8px var(--gutter) 22px;transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s;box-shadow:0 28px 40px -24px rgba(16,16,20,.35)}
+  .menu.open{opacity:1;transform:none;visibility:visible}
+  .menu>a{display:flex;align-items:center;min-height:58px;border-bottom:1px solid var(--rule);font:400 24px/1 Jost,sans-serif}
+  .menu a.menu-cta{margin-top:14px;border:0;justify-content:center;min-height:56px;border-radius:999px;background:var(--violet);color:#fff;font:500 16px/1 "Instrument Sans",sans-serif}
+}
+/* two-column service grid: every row is full, last card no longer sits alone */
+@media (min-width:761px) and (max-width:1100px){ .bento .span2:last-child{grid-column:auto} .bento .span2:last-child .viz-brand .ig{display:none} }
+/* phone: the floating WhatsApp button no longer covers the last footer line */
+@media (max-width:760px){ .foot-base{padding-bottom:72px} }
 </style>
 <script>document.documentElement.classList.add("js")</script>
 </head>
@@ -609,14 +701,15 @@ h1 em,.h2 em{background:var(--grad);-webkit-background-clip:text;background-clip
       <span>ONE AIM</span>
     </a>
     <nav class="links" aria-label="Main">
-      <a href="#services">Services</a><a href="#why">Why One Aim</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+      <a href="#services">Services</a><a href="#why">Why One Aim</a><a href="#how">How it works</a><a href="#contact">Contact us</a><a href="#faq">FAQ</a>
       <a class="lang" href="es/" hreflang="es" lang="es">Español</a>
+      <a class="nav-so" href="https://www.instagram.com/oneaimagency/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg class="so-ig" viewBox="0 0 24 24" aria-hidden="true" style="--g:url(#igG1)"><defs><radialGradient id="igG1" gradientUnits="userSpaceOnUse" cx="6" cy="23" r="28"><stop offset="0" stop-color="#FFD776"/><stop offset=".25" stop-color="#F3A045"/><stop offset=".45" stop-color="#F33A6A"/><stop offset=".7" stop-color="#BF2DB6"/><stop offset="1" stop-color="#6A3BE4"/></radialGradient></defs><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="dot" cx="17.2" cy="6.8" r="1.1"/></svg></a><a class="nav-so" href="https://www.tiktok.com/@oneaimagency_" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg class="so-tt" viewBox="0 0 24 24" aria-hidden="true"><path class="c" transform="translate(-.8 -.6)" d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v2.6c-1.4.1-2.6-.3-3.9-1.1v5.6c0 4.4-4.8 6.9-8.3 4.4-2.4-1.7-2.8-5.3-.8-7.4 1.2-1.3 2.7-1.8 4.6-1.6v2.8c-.9-.3-2 0-2.6.7-.8.9-.7 2.4.3 3.1 1.4 1 3.5.1 3.5-1.9V3h3.3Z"/><path class="r" transform="translate(.8 .6)" d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v2.6c-1.4.1-2.6-.3-3.9-1.1v5.6c0 4.4-4.8 6.9-8.3 4.4-2.4-1.7-2.8-5.3-.8-7.4 1.2-1.3 2.7-1.8 4.6-1.6v2.8c-.9-.3-2 0-2.6.7-.8.9-.7 2.4.3 3.1 1.4 1 3.5.1 3.5-1.9V3h3.3Z"/><path class="k" d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v2.6c-1.4.1-2.6-.3-3.9-1.1v5.6c0 4.4-4.8 6.9-8.3 4.4-2.4-1.7-2.8-5.3-.8-7.4 1.2-1.3 2.7-1.8 4.6-1.6v2.8c-.9-.3-2 0-2.6.7-.8.9-.7 2.4.3 3.1 1.4 1 3.5.1 3.5-1.9V3h3.3Z"/></svg></a>
       <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
       <a class="talk" href="https://cal.com/oneaimagency/30min" target="_blank" rel="noopener">Book a consultation</a>
     </nav>
   </div>
   <nav class="menu" id="menu" aria-label="Mobile">
-    <a href="#services">Services</a><a href="#why">Why One Aim</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a class="menu-cta" href="https://cal.com/oneaimagency/30min" target="_blank" rel="noopener">Book a free consultation</a>
+    <a href="#services">Services</a><a href="#why">Why One Aim</a><a href="#how">How it works</a><a href="#contact">Contact us</a><a href="#faq">FAQ</a><a class="menu-cta" href="https://cal.com/oneaimagency/30min" target="_blank" rel="noopener">Book a free consultation</a><div class="socials"><a class="" href="https://www.instagram.com/oneaimagency/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg class="so-ig" viewBox="0 0 24 24" aria-hidden="true" style="--g:url(#igG2)"><defs><radialGradient id="igG2" gradientUnits="userSpaceOnUse" cx="6" cy="23" r="28"><stop offset="0" stop-color="#FFD776"/><stop offset=".25" stop-color="#F3A045"/><stop offset=".45" stop-color="#F33A6A"/><stop offset=".7" stop-color="#BF2DB6"/><stop offset="1" stop-color="#6A3BE4"/></radialGradient></defs><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="dot" cx="17.2" cy="6.8" r="1.1"/></svg></a><a class="" href="https://www.tiktok.com/@oneaimagency_" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg class="so-tt" viewBox="0 0 24 24" aria-hidden="true"><path class="c" transform="translate(-.8 -.6)" d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v2.6c-1.4.1-2.6-.3-3.9-1.1v5.6c0 4.4-4.8 6.9-8.3 4.4-2.4-1.7-2.8-5.3-.8-7.4 1.2-1.3 2.7-1.8 4.6-1.6v2.8c-.9-.3-2 0-2.6.7-.8.9-.7 2.4.3 3.1 1.4 1 3.5.1 3.5-1.9V3h3.3Z"/><path class="r" transform="translate(.8 .6)" d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v2.6c-1.4.1-2.6-.3-3.9-1.1v5.6c0 4.4-4.8 6.9-8.3 4.4-2.4-1.7-2.8-5.3-.8-7.4 1.2-1.3 2.7-1.8 4.6-1.6v2.8c-.9-.3-2 0-2.6.7-.8.9-.7 2.4.3 3.1 1.4 1 3.5.1 3.5-1.9V3h3.3Z"/><path class="k" d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v2.6c-1.4.1-2.6-.3-3.9-1.1v5.6c0 4.4-4.8 6.9-8.3 4.4-2.4-1.7-2.8-5.3-.8-7.4 1.2-1.3 2.7-1.8 4.6-1.6v2.8c-.9-.3-2 0-2.6.7-.8.9-.7 2.4.3 3.1 1.4 1 3.5.1 3.5-1.9V3h3.3Z"/></svg></a></div>
   </nav>
 </header>
 
@@ -638,6 +731,7 @@ h1 em,.h2 em{background:var(--grad);-webkit-background-clip:text;background-clip
     </div>
 
     <div class="climb" id="climb">
+      <div class="stage" id="stage">
       <svg viewBox="0 0 820 600" role="group" aria-label="Our seven services, rising into the One Aim mark">
         <g id="bars"></g>
         <!-- the diagonal is cut flat at the stem's top and the baseline, so the apex meets the stem's corner cleanly -->
@@ -648,6 +742,12 @@ h1 em,.h2 em{background:var(--grad);-webkit-background-clip:text;background-clip
         </g>
         <rect class="a-stem" x="454" y="16" width="16" height="560"/>
       </svg>
+      <div class="toasts" aria-hidden="true">
+        <div class="toast t1"><i class="ti ti-v"><svg viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="14" rx="2.5"/><path d="M4 10h16M9 3.5v4M15 3.5v4M9.5 14.5l2 2 3.5-3.5"/></svg></i><b>New booking</b><span>Tue · 2:30 PM</span></div>
+        <div class="toast t2"><i class="ti ti-e"><svg viewBox="0 0 24 24"><path d="M5 5.5h14a1.5 1.5 0 0 1 1.5 1.5v8a1.5 1.5 0 0 1-1.5 1.5H10l-4.5 3.5V16.5H5A1.5 1.5 0 0 1 3.5 15V7A1.5 1.5 0 0 1 5 5.5Z"/><path d="M8 10.5h8M8 13h5"/></svg></i><b>Missed call</b><span>Text sent automatically</span></div>
+        <div class="toast t3"><i class="ti ti-k"><svg viewBox="0 0 24 24"><circle cx="10" cy="8.5" r="3.5"/><path d="M3.5 19c.8-3.3 3.3-5 6.5-5s5.7 1.7 6.5 5M18.5 8v6M15.5 11h6"/></svg></i><b>New lead</b><span>From your Google profile</span></div>
+      </div>
+      </div>
       <div class="caption" aria-live="polite">
         <span class="num" id="capNum">01</span><span class="t" id="capTitle">Websites</span>
         <p id="capText"></p>
@@ -666,7 +766,7 @@ h1 em,.h2 em{background:var(--grad);-webkit-background-clip:text;background-clip
           <p class="sub">Most businesses start with a website. The rest plugs into it whenever you're ready, and one person builds all of it.</p>
         </div>
         <div class="bento">
-          <article class="card span2" data-reveal>
+          <article class="card span2 beam" data-reveal>
             <div class="viz viz-web" aria-hidden="true">
               <div class="browser"><div class="bar"><i></i><i></i><i></i><span></span></div>
                 <div class="page"><b class="w-nav"></b><b class="w-h1"></b><b class="w-h1 s"></b><b class="w-p"></b><b class="w-p s"></b><b class="w-btn"></b><b class="w-img"></b></div>
@@ -674,13 +774,6 @@ h1 em,.h2 em{background:var(--grad);-webkit-background-clip:text;background-clip
             </div>
             <div class="card-tx"><p class="num">01 <span class="tag">Most start here</span></p><h3>Websites</h3><p>A site that makes people trust you before they call.</p>
               <ul class="chips"><li>Built for phones first</li><li>Found on Google</li><li>Live in days, yours to keep</li></ul></div>
-          </article>
-          <article class="card" data-reveal>
-            <div class="viz viz-book" aria-hidden="true">
-              <div class="cal"><span class="m">Booking</span><div class="grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="hot"></i><i></i><i></i><i></i><i></i></div><span class="ok">Booked &check;</span></div>
-            </div>
-            <div class="card-tx"><p class="num">03</p><h3>Booking and automations</h3><p>Customers book themselves. Reminders go out on their own.</p>
-              <ul class="chips"><li>Online booking</li><li>Missed-call text-back</li></ul></div>
           </article>
           <article class="card" data-reveal>
             <div class="viz viz-store" aria-hidden="true">
@@ -691,21 +784,19 @@ h1 em,.h2 em{background:var(--grad);-webkit-background-clip:text;background-clip
               <ul class="chips"><li>Payments and shipping</li><li>Easy to run yourself</li></ul></div>
           </article>
           <article class="card" data-reveal>
+            <div class="viz viz-book" aria-hidden="true">
+              <div class="cal"><span class="m">Booking</span><div class="grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="hot"></i><i></i><i></i><i></i><i></i></div><span class="ok">Booked &check;</span></div>
+            </div>
+            <div class="card-tx"><p class="num">03</p><h3>Booking and automations</h3><p>Customers book themselves. Reminders go out on their own.</p>
+              <ul class="chips"><li>Online booking</li><li>Missed-call text-back</li></ul></div>
+          </article>
+          <article class="card" data-reveal>
             <div class="viz viz-crm" aria-hidden="true">
               <div class="cols"><div><span>New</span></div><div><span>Quoted</span></div><div><span>Won</span></div></div>
               <b class="lead-card"><i></i><em></em></b>
             </div>
             <div class="card-tx"><p class="num">04</p><h3>CRM</h3><p>Every lead and customer in one place.</p>
               <ul class="chips"><li>Nothing lost in DMs</li><li>Follow-ups on time</li></ul></div>
-          </article>
-          <article class="card" data-reveal>
-            <div class="viz viz-ai" aria-hidden="true">
-              <p class="b q">Are you open Saturday?</p>
-              <p class="b typing"><i></i><i></i><i></i></p>
-              <p class="b a">Yes, 9 to 2. Want me to book you in?</p>
-            </div>
-            <div class="card-tx"><p class="num">06</p><h3>AI assistants</h3><p>Answers and follows up when you can't.</p>
-              <ul class="chips"><li>Website assistant</li><li>AI receptionist</li></ul></div>
           </article>
           <article class="card" data-reveal>
             <div class="viz viz-ads" aria-hidden="true">
@@ -718,6 +809,15 @@ h1 em,.h2 em{background:var(--grad);-webkit-background-clip:text;background-clip
             </div>
             <div class="card-tx"><p class="num">05</p><h3>Lead generation and ads</h3><p>Get in front of people who are already looking for what you do.</p>
               <ul class="chips"><li>Google and social ads</li><li>Pages that turn clicks into calls</li><li>You see where the money goes</li></ul></div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="viz viz-ai" aria-hidden="true">
+              <p class="b q">Are you open Saturday?</p>
+              <p class="b typing"><i></i><i></i><i></i></p>
+              <p class="b a">Yes, 9 to 2. Want me to book you in?</p>
+            </div>
+            <div class="card-tx"><p class="num">06</p><h3>AI assistants</h3><p>Answers and follows up when you can't.</p>
+              <ul class="chips"><li>Website assistant</li><li>AI receptionist</li></ul></div>
           </article>
           <article class="card span2" data-reveal>
             <div class="viz viz-brand" aria-hidden="true">
@@ -790,6 +890,37 @@ h1 em,.h2 em{background:var(--grad);-webkit-background-clip:text;background-clip
     </div>
   </section>
 
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="pill"><span class="dot"></span>Contact</p>
+        <h2 class="h2" id="contact-h">Got an idea or a problem in your business? <em>Let's talk it through.</em></h2>
+        <p class="sub">Book a free consultation, or send a message below. We reply ourselves, usually the same day, and we'll tell you straight what would help.</p>
+        <div class="direct">
+          <a class="btn btn-primary" href="https://cal.com/oneaimagency/30min" target="_blank" rel="noopener">Book a free consultation</a>
+          <a class="btn btn-ghost" href="https://wa.me/17863076485?text=Hi%20One%20Aim%2C%20I%27d%20like%20to%20start%20a%20project%20for%20my%20business." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Message us on WhatsApp</a>
+        </div>
+        <div class="lines"><a href="mailto:oneaimagency@gmail.com">oneaimagency@gmail.com</a><a href="tel:+17863076485">(786) 307-6485</a></div>
+        <div class="socials"><a class="" href="https://www.instagram.com/oneaimagency/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg class="so-ig" viewBox="0 0 24 24" aria-hidden="true" style="--g:url(#igG3)"><defs><radialGradient id="igG3" gradientUnits="userSpaceOnUse" cx="6" cy="23" r="28"><stop offset="0" stop-color="#FFD776"/><stop offset=".25" stop-color="#F3A045"/><stop offset=".45" stop-color="#F33A6A"/><stop offset=".7" stop-color="#BF2DB6"/><stop offset="1" stop-color="#6A3BE4"/></radialGradient></defs><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="dot" cx="17.2" cy="6.8" r="1.1"/></svg></a><a class="" href="https://www.tiktok.com/@oneaimagency_" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg class="so-tt" viewBox="0 0 24 24" aria-hidden="true"><path class="c" transform="translate(-.8 -.6)" d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v2.6c-1.4.1-2.6-.3-3.9-1.1v5.6c0 4.4-4.8 6.9-8.3 4.4-2.4-1.7-2.8-5.3-.8-7.4 1.2-1.3 2.7-1.8 4.6-1.6v2.8c-.9-.3-2 0-2.6.7-.8.9-.7 2.4.3 3.1 1.4 1 3.5.1 3.5-1.9V3h3.3Z"/><path class="r" transform="translate(.8 .6)" d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v2.6c-1.4.1-2.6-.3-3.9-1.1v5.6c0 4.4-4.8 6.9-8.3 4.4-2.4-1.7-2.8-5.3-.8-7.4 1.2-1.3 2.7-1.8 4.6-1.6v2.8c-.9-.3-2 0-2.6.7-.8.9-.7 2.4.3 3.1 1.4 1 3.5.1 3.5-1.9V3h3.3Z"/><path class="k" d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v2.6c-1.4.1-2.6-.3-3.9-1.1v5.6c0 4.4-4.8 6.9-8.3 4.4-2.4-1.7-2.8-5.3-.8-7.4 1.2-1.3 2.7-1.8 4.6-1.6v2.8c-.9-.3-2 0-2.6.7-.8.9-.7 2.4.3 3.1 1.4 1 3.5.1 3.5-1.9V3h3.3Z"/></svg></a></div>
+        <p class="privacy">If you fill in the form we receive your name, business name, email, phone, what you need, your city and your message. That is all we collect. No tracking, no advertising pixel, no analytics on this site. Want your details deleted? Email us and we'll delete them.</p>
+      </div>
+      <form id="contactForm" novalidate>
+        <input type="hidden" name="access_key" value="8ed11435-dcd7-4081-85c1-702e59ed51d5">
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
+        <input type="hidden" name="subject" value="New inquiry — One Aim Agency website">
+        <label>Your name<input name="name" type="text" autocomplete="name" required></label>
+        <label>Business name<input name="business" type="text" autocomplete="organization" required></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+        <label>What do you need?<select name="need" required><option value="">Choose one</option><option>Website</option><option>Online store</option><option>Booking and automations</option><option>CRM and customer management</option><option>Lead generation and ads</option><option>AI assistant</option><option>Branding</option><option>A mix of these</option><option>Not sure yet</option></select></label>
+        <label>City<input name="city" type="text" autocomplete="address-level2" required></label>
+        <label class="full">Message<textarea name="message" required placeholder="What does your business do, and what would you like to fix or build?"></textarea></label>
+        <div class="submit"><button type="submit" class="btn btn-primary" id="submitBtn">Send it over</button><span>Half up front, half when it's live.</span></div>
+        <div class="form-msg" id="formMsg" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
   <section id="faq" aria-labelledby="faq-h">
     <div class="wrap faq-grid">
       <div class="sticky" data-reveal><p class="pill"><span class="dot"></span>FAQ</p><h2 class="h2" id="faq-h">Straight <em>answers.</em></h2></div>
@@ -804,35 +935,6 @@ h1 em,.h2 em{background:var(--grad);-webkit-background-clip:text;background-clip
       </div>
     </div>
   </section>
-
-  <section class="contact" id="contact" aria-labelledby="contact-h">
-    <div class="wrap contact-grid">
-      <div>
-        <p class="pill"><span class="dot"></span>Contact</p>
-        <h2 class="h2" id="contact-h">Got an idea or a problem in your business? <em>Let's talk it through.</em></h2>
-        <p class="sub">Book a free consultation, or send a message below. We reply ourselves, usually the same day, and we'll tell you straight what would help.</p>
-        <div class="direct">
-          <a class="btn btn-primary" href="https://cal.com/oneaimagency/30min" target="_blank" rel="noopener">Book a free consultation</a>
-          <a class="btn btn-ghost" href="https://wa.me/17863076485?text=Hi%20One%20Aim%2C%20I%27d%20like%20to%20start%20a%20project%20for%20my%20business." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Message us on WhatsApp</a>
-        </div>
-        <div class="lines"><a href="mailto:oneaimagency@gmail.com">oneaimagency@gmail.com</a><a href="tel:+17863076485">(786) 307-6485</a></div>
-        <p class="privacy">If you fill in the form we receive your name, business name, email, phone, what you need, your city and your message. That is all we collect. No tracking, no advertising pixel, no analytics on this site. Want your details deleted? Email us and we'll delete them.</p>
-      </div>
-      <form id="contactForm" novalidate>
-        <input type="hidden" name="access_key" value="8ed11435-dcd7-4081-85c1-702e59ed51d5">
-        <input type="hidden" name="subject" value="New inquiry — One Aim Agency website">
-        <label>Your name<input name="name" type="text" autocomplete="name" required></label>
-        <label>Business name<input name="business" type="text" autocomplete="organization" required></label>
-        <label>Email<input name="email" type="email" autocomplete="email" required></label>
-        <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
-        <label>What do you need?<select name="need" required><option value="">Choose one</option><option>Website</option><option>Online store</option><option>Booking and automations</option><option>CRM and customer management</option><option>Lead generation and ads</option><option>AI assistant</option><option>Branding</option><option>A mix of these</option><option>Not sure yet</option></select></label>
-        <label>City<input name="city" type="text" autocomplete="address-level2" required></label>
-        <label class="full">Message<textarea name="message" required placeholder="What does your business do, and what would you like to fix or build?"></textarea></label>
-        <div class="submit"><button type="submit" class="btn btn-primary" id="submitBtn">Send it over</button><span>Half up front, half when it's live.</span></div>
-        <div class="form-msg" id="formMsg" role="status" aria-live="polite"></div>
-      </form>
-    </div>
-  </section>
 </main>
 
 <footer class="foot-dark">
@@ -841,8 +943,8 @@ h1 em,.h2 em{background:var(--grad);-webkit-background-clip:text;background-clip
       <div><p class="foot-lede">Every business has one aim.<br><em>Let's get you there.</em></p>
         <a class="btn btn-primary" href="https://cal.com/oneaimagency/30min" target="_blank" rel="noopener">Book a free consultation</a></div>
       <div class="foot-cols">
-        <div><p class="fh">Explore</p><a href="#services">Services</a><a href="#why">Why One Aim</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
-        <div><p class="fh">Contact</p><a href="https://wa.me/17863076485" target="_blank" rel="noopener">WhatsApp</a><span class="sel">(786) 307-6485</span><span class="sel">oneaimagency@gmail.com</span><span>Miami, FL &middot; Working across the U.S.</span></div>
+        <div><p class="fh">Explore</p><a href="#services">Services</a><a href="#why">Why One Aim</a><a href="#how">How it works</a><a href="#contact">Contact us</a><a href="#faq">FAQ</a></div>
+        <div><p class="fh">Contact</p><a href="https://wa.me/17863076485" target="_blank" rel="noopener">WhatsApp</a><a href="tel:+17863076485">(786) 307-6485</a><a href="mailto:oneaimagency@gmail.com">oneaimagency@gmail.com</a><span>Miami, FL &middot; Working across the U.S.</span><div class="socials"><a class="" href="https://www.instagram.com/oneaimagency/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg class="so-ig" viewBox="0 0 24 24" aria-hidden="true" style="--g:url(#igG4)"><defs><radialGradient id="igG4" gradientUnits="userSpaceOnUse" cx="6" cy="23" r="28"><stop offset="0" stop-color="#FFD776"/><stop offset=".25" stop-color="#F3A045"/><stop offset=".45" stop-color="#F33A6A"/><stop offset=".7" stop-color="#BF2DB6"/><stop offset="1" stop-color="#6A3BE4"/></radialGradient></defs><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="dot" cx="17.2" cy="6.8" r="1.1"/></svg></a><a class="" href="https://www.tiktok.com/@oneaimagency_" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg class="so-tt" viewBox="0 0 24 24" aria-hidden="true"><path class="c" transform="translate(-.8 -.6)" d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v2.6c-1.4.1-2.6-.3-3.9-1.1v5.6c0 4.4-4.8 6.9-8.3 4.4-2.4-1.7-2.8-5.3-.8-7.4 1.2-1.3 2.7-1.8 4.6-1.6v2.8c-.9-.3-2 0-2.6.7-.8.9-.7 2.4.3 3.1 1.4 1 3.5.1 3.5-1.9V3h3.3Z"/><path class="r" transform="translate(.8 .6)" d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v2.6c-1.4.1-2.6-.3-3.9-1.1v5.6c0 4.4-4.8 6.9-8.3 4.4-2.4-1.7-2.8-5.3-.8-7.4 1.2-1.3 2.7-1.8 4.6-1.6v2.8c-.9-.3-2 0-2.6.7-.8.9-.7 2.4.3 3.1 1.4 1 3.5.1 3.5-1.9V3h3.3Z"/><path class="k" d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v2.6c-1.4.1-2.6-.3-3.9-1.1v5.6c0 4.4-4.8 6.9-8.3 4.4-2.4-1.7-2.8-5.3-.8-7.4 1.2-1.3 2.7-1.8 4.6-1.6v2.8c-.9-.3-2 0-2.6.7-.8.9-.7 2.4.3 3.1 1.4 1 3.5.1 3.5-1.9V3h3.3Z"/></svg></a></div></div>
       </div>
     </div>
     <p class="wordmark" aria-hidden="true">ONE AIM</p>
@@ -852,6 +954,7 @@ h1 em,.h2 em{background:var(--grad);-webkit-background-clip:text;background-clip
 
 <a class="wa-float" id="waFloat" href="https://wa.me/17863076485?text=Hi%20One%20Aim%2C%20I%27d%20like%20to%20start%20a%20project%20for%20my%20business." target="_blank" rel="noopener" aria-label="Message One Aim on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg></a>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 (function(){
   var services=[
@@ -881,7 +984,7 @@ h1 em,.h2 em{background:var(--grad);-webkit-background-clip:text;background-clip
     var stems=[].slice.call(g.querySelectorAll("rect.stem")),hs=stems.map(function(r){return +r.getAttribute("height")}),t0=0;
     var breathe=function(ts){
       if(!t0)t0=ts;var s=(ts-t0)/1000;
-      if(!document.hidden&&s>2.4){
+      if(!document.hidden&&s>2.4&&!climb.classList.contains("gl")){
         var k=Math.min(1,(s-2.4)/1.5);
         stems.forEach(function(r,i){
           var nh=hs[i]*(1+k*.075*Math.sin(s*1.1-i*.7));
@@ -898,11 +1001,14 @@ h1 em,.h2 em{background:var(--grad);-webkit-background-clip:text;background-clip
     g.querySelectorAll(".bar").forEach(function(b){b.classList.toggle("on",+b.dataset.i===i)});
     list.querySelectorAll("li").forEach(function(l){var on=+l.dataset.i===i;l.classList.toggle("on",on);l.querySelector("button").setAttribute("aria-expanded",String(on))});
     capNum.textContent="0"+(i+1);capTitle.textContent=services[i][0];capText.textContent=services[i][1];
+    if(window.__gl)window.__gl.highlight(i);
   }
+  window.__climbPick=pick;
+  window.__climbClear=function(){climb.classList.remove("active");if(window.__gl)window.__gl.highlight(-1)};
   function fromBar(e){var b=e.target.closest(".bar");if(b)pick(+b.dataset.i)}
   g.addEventListener("mouseover",fromBar);g.addEventListener("focusin",fromBar);g.addEventListener("click",fromBar);
   g.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();fromBar(e)}});
-  climb.querySelector("svg").addEventListener("mouseleave",function(){climb.classList.remove("active")});
+  climb.querySelector("svg").addEventListener("mouseleave",window.__climbClear);
   list.addEventListener("click",function(e){var li=e.target.closest("li");if(li)pick(+li.dataset.i)});
 
   /* field: hairlines rising from the bottom of the front page, grey on the left turning violet toward the A,
@@ -1002,6 +1108,113 @@ h1 em,.h2 em{background:var(--grad);-webkit-background-clip:text;background-clip
     var ticking=false;
     window.addEventListener("scroll",function(){if(!ticking){ticking=true;requestAnimationFrame(function(){prog();float();ticking=false})}},{passive:true});
     prog();float();
+  })();
+
+  /* cards: the glow follows the pointer */
+  document.querySelectorAll(".card").forEach(function(c){c.addEventListener("pointermove",function(e){var r=c.getBoundingClientRect();c.style.setProperty("--mx",(e.clientX-r.left)+"px");c.style.setProperty("--my",(e.clientY-r.top)+"px")})});
+
+  /* the climb in 3D: the same seven rules and the A, built as solid pieces with light and shadow.
+     Falls back to the flat drawing when WebGL is missing or Reduce Motion is on. */
+  (function(){
+    var stage=document.getElementById("stage"),climb=document.getElementById("climb");
+    if(!stage||!window.THREE||window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+    try{var probe=document.createElement("canvas");if(!(probe.getContext("webgl2")||probe.getContext("webgl")))return}catch(e){return}
+    var T=window.THREE,cv=document.createElement("canvas"),renderer;
+    try{renderer=new T.WebGLRenderer({canvas:cv,antialias:true,alpha:true,powerPreference:"high-performance"})}catch(e){return}
+    cv.className="gl";cv.setAttribute("aria-hidden","true");stage.appendChild(cv);
+    var small=window.innerWidth<760;
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,small?1.6:2));
+    renderer.outputEncoding=T.sRGBEncoding;
+    renderer.shadowMap.enabled=true;renderer.shadowMap.type=T.PCFSoftShadowMap;
+    renderer.localClippingEnabled=true;
+
+    var scene=new T.Scene(),cam=new T.PerspectiveCamera(26,1,.1,100),world=new T.Group();scene.add(world);
+    function lin(hex){return new T.Color(hex).convertSRGBToLinear()}
+
+    /* light: soft daylight, a key light that casts the shadow, a violet glow by the A, an ember glow low on the left */
+    scene.add(new T.HemisphereLight(0xffffff,0xEDE6F7,.8));
+    var key=new T.DirectionalLight(0xffffff,.95);key.position.set(-5,10,9);key.castShadow=true;
+    key.shadow.mapSize.set(small?1024:2048,small?1024:2048);
+    var sc=key.shadow.camera;sc.left=-7;sc.right=7;sc.top=9;sc.bottom=-3;sc.near=1;sc.far=40;key.shadow.radius=7;key.shadow.bias=-.0006;
+    scene.add(key);
+    var vio=new T.PointLight(0xA876FF,1.6,16,2);vio.position.set(2.4,4.6,2.8);scene.add(vio);
+    var emb=new T.PointLight(0xFF6B3D,1.1,13,2);emb.position.set(-3.8,.8,3.2);scene.add(emb);
+    var rim=new T.DirectionalLight(0xC9A8FF,.7);rim.position.set(6,7,-7);scene.add(rim);
+
+    var floor=new T.Mesh(new T.PlaneGeometry(24,12),new T.ShadowMaterial({opacity:.12}));
+    floor.rotation.x=-Math.PI/2;floor.position.y=-.02;floor.receiveShadow=true;world.add(floor);
+
+    /* pieces: same proportions as the flat mark (1 unit = 100 drawing units, floor at y 0) */
+    var D=.34,opts={depth:D,bevelEnabled:true,bevelThickness:.022,bevelSize:.02,bevelSegments:3,curveSegments:4};
+    function ext(pts){var s=new T.Shape();s.moveTo(pts[0][0],pts[0][1]);for(var i=1;i<pts.length;i++)s.lineTo(pts[i][0],pts[i][1]);s.closePath();var g=new T.ExtrudeGeometry(s,opts);g.translate(0,0,-D/2);return g}
+    function box(x,w,y0,h){return ext([[x,y0],[x+w,y0],[x+w,y0+h],[x,y0+h]])}
+
+    var paper=new T.Color(0xF7F6F4),ink=new T.Color(0x101014),violet=lin(0x6C22E0),violetGlow=lin(0x5A17C4);
+    var bars=[],baseCol=[],target=[];
+    for(var i=0;i<7;i++){
+      var h=(70+62*i)/100,c=paper.clone().lerp(ink,.3+i*.075).convertSRGBToLinear();
+      var m=new T.MeshStandardMaterial({color:c.clone(),roughness:.3,metalness:.18,emissive:new T.Color(0x000000)});
+      var b=new T.Mesh(box(0,.16,0,h),m);b.position.x=-3.94+.58*i;b.castShadow=true;b.receiveShadow=true;
+      b.userData={i:i,h:h};b.scale.y=.001;world.add(b);bars.push(b);baseCol.push(c);target.push(0);
+    }
+    var stem=new T.Mesh(box(.24,.16,0,5.6),new T.MeshStandardMaterial({color:violet,emissive:violetGlow,emissiveIntensity:.6,roughness:.2,metalness:.25}));
+    stem.castShadow=true;stem.scale.y=.001;world.add(stem);
+    var clip=new T.Plane(new T.Vector3(0,1,0),-6);
+    var inkM=new T.MeshStandardMaterial({color:lin(0x17171C),roughness:.26,metalness:.4,clippingPlanes:[clip]});
+    var diag=new T.Mesh(ext([[.21,5.6],[.40,5.6],[3.94,0],[3.75,0]]),inkM);diag.castShadow=true;world.add(diag);
+    var cross=new T.Mesh(box(0,2.05,2.08,.16),new T.MeshStandardMaterial({color:lin(0x17171C),roughness:.26,metalness:.4}));
+    cross.position.x=.40;cross.scale.x=.001;cross.castShadow=true;world.add(cross);
+
+    /* hover: the chosen bar turns violet and glows, the others step back */
+    var hl=-1,dim=paper.clone().lerp(ink,.2).convertSRGBToLinear(),vCol=violet.clone();
+    window.__gl={highlight:function(i){hl=i}};
+
+    function fit(){
+      var w=cv.clientWidth,h=cv.clientHeight;if(!w||!h)return;
+      renderer.setSize(w,h,false);cam.aspect=w/h;
+      var dist=small?17.5:16.2;cam.position.set(0,3.5,dist);cam.lookAt(.15,2.55,0);cam.updateProjectionMatrix();
+    }
+    fit();
+    var rt;window.addEventListener("resize",function(){clearTimeout(rt);rt=setTimeout(fit,120)});
+
+    var ray=new T.Raycaster(),ptr=new T.Vector2(),mx=0,my=0,tmx=0,tmy=0;
+    cv.addEventListener("pointermove",function(e){
+      var r=cv.getBoundingClientRect();ptr.x=(e.clientX-r.left)/r.width*2-1;ptr.y=-(e.clientY-r.top)/r.height*2+1;
+      tmx=ptr.x;tmy=ptr.y;ray.setFromCamera(ptr,cam);
+      var hit=ray.intersectObjects(bars)[0];cv.style.cursor=hit?"pointer":"default";
+      if(hit&&window.__climbPick)window.__climbPick(hit.object.userData.i);
+    });
+    cv.addEventListener("pointerleave",function(){tmx=0;tmy=0;if(window.__climbClear)window.__climbClear()});
+
+    var ease=function(x){x=Math.max(0,Math.min(1,x));return 1-Math.pow(1-x,3)};
+    var t0=performance.now(),raf=0,visible=true;
+    function frame(now){
+      var s=(now-t0)/1000;
+      /* build: the rules climb in one by one, the violet stem rises, the diagonal draws down from the top, the bar slides across */
+      var k=Math.min(1,Math.max(0,(s-2.6)/1.5));
+      for(var i=0;i<7;i++){
+        var b=bars[i],grow=ease((s-.15-i*.09)/.9),breath=1+k*.075*Math.sin(s*1.1-i*.7);
+        b.scale.y=Math.max(.001,grow*breath);
+        var m=b.material,want=hl<0?baseCol[i]:(hl===i?vCol:dim);
+        m.color.lerp(want,.12);m.emissive.lerp(hl===i?violetGlow:new T.Color(0x000000),.12);m.emissiveIntensity=.7;
+      }
+      stem.scale.y=Math.max(.001,ease((s-.75)/1));
+      clip.constant=-(5.7-5.8*ease((s-1.25)/.85));
+      cross.scale.x=Math.max(.001,ease((s-1.85)/.6));
+      /* a slow float and turn, leaning toward the mouse */
+      mx+=(tmx-mx)*.05;my+=(tmy-my)*.05;
+      world.rotation.y=-.34+Math.sin(s*.32)*.09+mx*.22;
+      world.rotation.x=.03-my*.05;
+      world.position.y=Math.sin(s*.7)*.05;
+      vio.intensity=1.5+Math.sin(s*1.3)*.25;
+      renderer.render(scene,cam);
+      if(visible&&!document.hidden)raf=requestAnimationFrame(frame);else raf=0;
+    }
+    function go(){if(!raf&&visible&&!document.hidden)raf=requestAnimationFrame(frame)}
+    if("IntersectionObserver" in window)new IntersectionObserver(function(es){visible=es[0].isIntersecting;go()}).observe(stage);
+    document.addEventListener("visibilitychange",go);
+    climb.classList.add("gl");
+    go();
   })();
 })();
 </script>
